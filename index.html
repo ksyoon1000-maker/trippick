@@ -32,7 +32,7 @@ a.go{background:var(--accent);color:var(--btn-text)}a.watch{border:1px solid var
 <div class="item" data-no="1" data-k="제주 샐리스호텔 5만원대 가성비 고내해변 오션뷰 제주 샐리스호텔"><img src="img/1.jpg" alt="" loading="lazy" width="72" height="128">
 <div><span class="no">1번</span><div class="name">제주 샐리스호텔</div><p class="desc">5만원대 가성비 고내해변 오션뷰 제주 샐리스호텔</p>
 <div class="btns"><a class="btn go" href="https://link.coupang.com/a/ioNtwPpWpg" target="_blank" rel="noopener sponsored">예약하러 가기</a><a class="btn watch" href="https://youtube.com/shorts/s0gfBNPPgHQ" target="_blank" rel="noopener">영상 보기</a></div></div></div></div><p class="empty" id="none" hidden>찾는 항목이 없어요.</p>
-<footer>이 페이지는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 일부 링크는 제휴 링크로, 링크를 통해 구매하면 채널이 수수료를 받을 수 있어요. 가격은 구매 시점에 따라 달라질 수 있어요.<br>마지막 업데이트 2026-11-06 20:51</footer>
+<footer>이 페이지는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 일부 링크는 제휴 링크로, 링크를 통해 구매하면 채널이 수수료를 받을 수 있어요. 가격은 구매 시점에 따라 달라질 수 있어요.<br>마지막 업데이트 2026-11-06 23:20</footer>
 </main><script>
 const q=document.getElementById("q"),rows=[...document.querySelectorAll(".item")];
 q.oninput=()=>{const v=q.value.trim().toLowerCase();let n=0;for(const r of rows){const ok=!v||r.dataset.no===v.replace(/[^0-9]/g,"")&&/^\d+$/.test(v)||r.dataset.k.includes(v);r.hidden=!ok;n+=ok}document.getElementById("none").hidden=n>0};
