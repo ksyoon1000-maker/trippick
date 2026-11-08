@@ -17,7 +17,10 @@ a.go{background:var(--accent);color:var(--btn-text)}a.watch{border:1px solid var
 </style></head><body><main>
 <h1>TripPick(트립픽)</h1><p class="intro">영상에서 본 숙소, 번호로 찾아 바로 예약해 보세요.</p>
 <input id="q" type="search" placeholder="번호나 이름으로 찾기 (예: 3, 여수)" aria-label="번호나 이름으로 찾기">
-<div id="list"><div class="item" data-no="6" data-k="인터스텔라 풀빌라 피의게임3 촬영지로 나온 춘천 거대 원형 풀빌라"><img src="img/6.jpg" alt="" loading="lazy" width="72" height="128">
+<div id="list"><div class="item" data-no="7" data-k="리플렉스풀빌라펜션 가평 리버뷰 감성 숙소 리플렉스풀빌라펜션"><img src="img/7.jpg" alt="" loading="lazy" width="72" height="128">
+<div><span class="no">7번</span><div class="name">리플렉스풀빌라펜션</div><p class="desc">가평 리버뷰 감성 숙소 리플렉스풀빌라펜션</p>
+<div class="btns"><a class="btn go" href="https://link.coupang.com/a/ivffdAyqE8" target="_blank" rel="noopener sponsored">예약하러 가기</a><a class="btn watch" href="https://youtube.com/shorts/wvko2qwqk-g" target="_blank" rel="noopener">영상 보기</a></div></div></div>
+<div class="item" data-no="6" data-k="인터스텔라 풀빌라 피의게임3 촬영지로 나온 춘천 거대 원형 풀빌라"><img src="img/6.jpg" alt="" loading="lazy" width="72" height="128">
 <div><span class="no">6번</span><div class="name">인터스텔라 풀빌라</div><p class="desc">피의게임3 촬영지로 나온 춘천 거대 원형 풀빌라</p>
 <div class="btns"><a class="btn go" href="https://link.coupang.com/a/isBeGB1qDY" target="_blank" rel="noopener sponsored">예약하러 가기</a><a class="btn watch" href="https://youtube.com/shorts/n-MfD6hElT4" target="_blank" rel="noopener">영상 보기</a></div></div></div>
 <div class="item" data-no="5" data-k="웨스트힐스 프라이빗 풀빌라 바다 앞 수영장과 야경이 멋진 여수 웨스트힐스 풀빌라"><img src="img/5.jpg" alt="" loading="lazy" width="72" height="128">
@@ -35,7 +38,7 @@ a.go{background:var(--accent);color:var(--btn-text)}a.watch{border:1px solid var
 <div class="item" data-no="1" data-k="제주 샐리스호텔 5만원대 가성비 고내해변 오션뷰 제주 샐리스호텔"><img src="img/1.jpg" alt="" loading="lazy" width="72" height="128">
 <div><span class="no">1번</span><div class="name">제주 샐리스호텔</div><p class="desc">5만원대 가성비 고내해변 오션뷰 제주 샐리스호텔</p>
 <div class="btns"><a class="btn go" href="https://link.coupang.com/a/ioNtwPpWpg" target="_blank" rel="noopener sponsored">예약하러 가기</a><a class="btn watch" href="https://youtube.com/shorts/s0gfBNPPgHQ" target="_blank" rel="noopener">영상 보기</a></div></div></div></div><p class="empty" id="none" hidden>찾는 항목이 없어요.</p>
-<footer>이 페이지는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 일부 링크는 제휴 링크로, 링크를 통해 구매하면 채널이 수수료를 받을 수 있어요. 가격은 구매 시점에 따라 달라질 수 있어요.<br>마지막 업데이트 2026-11-06 23:56</footer>
+<footer>이 페이지는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 일부 링크는 제휴 링크로, 링크를 통해 구매하면 채널이 수수료를 받을 수 있어요. 가격은 구매 시점에 따라 달라질 수 있어요.<br>마지막 업데이트 2026-11-08 16:51</footer>
 </main><script>
 const q=document.getElementById("q"),rows=[...document.querySelectorAll(".item")];
 q.oninput=()=>{const v=q.value.trim().toLowerCase();let n=0;for(const r of rows){const ok=!v||r.dataset.no===v.replace(/[^0-9]/g,"")&&/^\d+$/.test(v)||r.dataset.k.includes(v);r.hidden=!ok;n+=ok}document.getElementById("none").hidden=n>0};
